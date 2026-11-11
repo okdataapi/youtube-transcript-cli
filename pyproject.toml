@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling>=1.26"]
+build-backend = "hatchling.build"
+
+[project]
+name = "youtube-transcript-cli-okdata"
+version = "0.1.0"
+description = "YouTube transcripts as text, SRT, VTT, Markdown or JSON from the command line, via the okdata API."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.9"
+dependencies = []
+
+[project.scripts]
+yt-transcript = "yt_transcript:main"
+
+[project.urls]
+Homepage = "https://github.com/okdataapi/youtube-transcript-cli"
+API = "https://okdata.online/apis/youtube/videos/transcript/get/"
+
+[tool.hatch.build.targets.wheel]
+only-include = ["yt_transcript.py"]
