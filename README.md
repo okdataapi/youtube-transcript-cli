@@ -45,8 +45,7 @@ Pipe it into an AI tool: `yt-transcript <link> | llm "summarise in five bullets"
 ## What it costs
 
 [`youtube.videos.transcript.get`](https://okdata.online/apis/youtube/videos/transcript/get/) costs $0.004 per
-video; 250 videos cost $1. A video without captions, or one the data source fails on, is charged like any other;
-calls stopped before that (bad parameters, low balance) are free. Prices: [prices.json](https://github.com/okdataapi/okdata/blob/main/docs/prices.json).
+video; 250 videos cost $1. Pay per call, no subscription; a new key comes with free trial credit. Prices: [prices.json](https://github.com/okdataapi/okdata/blob/main/docs/prices.json).
 
 ## Notes
 
@@ -63,5 +62,5 @@ calls stopped before that (bad parameters, low balance) are free. Prices: [price
 ## 中文
 
 `yt-transcript <链接>` 取 YouTube 视频字幕，输出纯文本、SRT、VTT、带时间跳转链接的 Markdown 或 JSON。
-服务器和 CI 上也能用（直接请求字幕经常被拦），因为字幕来自 okdata 的接口。每个视频 $0.004，没有字幕或数据源出错的也照常计费。
+服务器和 CI 上也能用（直接请求字幕经常被拦），因为字幕来自 okdata 的接口。每个视频 $0.004，按次计费，不用订阅。
 在 [okdata](https://okdata.online/zh/signup/?src=gh-youtube-transcript-cli) 注册拿 key，放进 `OKDATA_API_KEY` 即可。MIT 许可证。
