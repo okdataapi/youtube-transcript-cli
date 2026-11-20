@@ -44,12 +44,12 @@ Pipe it into an AI tool: `yt-transcript <link> | llm "summarise in five bullets"
 
 ## What it costs
 
-[`youtube.videos.transcript.get`](https://okdata.online/apis/youtube/videos/transcript/get/) costs $0.004 per
+[`youtube.videos.transcript.get`](https://okdata.online/apis/youtube/videos/transcript/get/?src=gh-youtube-transcript-cli) costs $0.004 per
 video; 250 videos cost $1. Pay per call, no subscription; a new key comes with free trial credit. Prices: [prices.json](https://github.com/okdataapi/okdata/blob/main/docs/prices.json).
 
 ## Notes
 
-- A sample project by [okdata](https://okdata.online), not affiliated with YouTube or Google. The script only calls
+- A sample project by [okdata](https://okdata.online/?src=gh-youtube-transcript-cli), not affiliated with YouTube or Google. The script only calls
   the okdata API.
 - Respect creators: summarise and quote, do not republish whole transcripts.
 - In an AI agent? Connect okdata's remote MCP server `https://api.okdata.online/mcp`, or install the
